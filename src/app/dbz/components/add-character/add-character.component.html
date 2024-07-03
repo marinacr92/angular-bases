@@ -1,0 +1,27 @@
+<h4>Agregar personaje</h4>
+<form class="row" (ngSubmit)="emitCharacter()">
+  <input
+    type="text"
+    [(ngModel)]="character.name"
+    name="name"
+    class="form-control mb-2"
+    placeholder="Nombre">
+
+  <input
+    type="text"
+    [(ngModel)]="character.power"
+    name="power"
+    class="form-control mb-2"
+    placeholder="Poder">
+
+  <button type="submit" class="btn btn-primary">
+    Agregar
+  </button>
+
+</form>
+
+
+
+<!--Los paréntesis () indican que es un evento
+    Los corchetes [] se usan para asociar un atributo
+    La caja de plátano [()] asician un evento y un atributo al mismo tiempo. A esto se le llama 'two way data binding'-->
